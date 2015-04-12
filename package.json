@@ -23,6 +23,8 @@
   "homepage": "https://github.com/tmacdonald/marionette-typescript",
   "devDependencies": {
     "compression": "^1.4.3",
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "gulp": "^3.8.11",
+    "gulp-tsc": "^0.9.4"
   }
 }
