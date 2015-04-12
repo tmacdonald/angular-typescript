@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/tmacdonald/marionette-typescript/issues"
   },
-  "homepage": "https://github.com/tmacdonald/marionette-typescript"
+  "homepage": "https://github.com/tmacdonald/marionette-typescript",
+  "devDependencies": {
+    "express": "^4.12.3"
+  }
 }
