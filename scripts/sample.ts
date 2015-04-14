@@ -9,3 +9,12 @@ class Animal {
     alert(this.name + " moved " + meters + "m.");
   }
 }
+
+interface ICustomScope extends ng.IScope {
+  title: string;
+}
+
+function Controller($scope: ICustomScope) {
+  $scope.$broadcast('myEvent');
+  $scope.title = 'Yabadabadu';
+}
