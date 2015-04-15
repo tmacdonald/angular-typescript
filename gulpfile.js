@@ -13,7 +13,10 @@ gulp.task('scripts', function() {
     .pipe(tsc({
       module: "CommonJS",
       sourcemap: true,
-      emitError: false
+      emitError: false,
+      out: 'bundle.js'
     }))
     .pipe(gulp.dest('dist'));
+
+
 });

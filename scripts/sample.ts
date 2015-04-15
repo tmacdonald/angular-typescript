@@ -18,3 +18,6 @@ function Controller($scope: ICustomScope) {
   $scope.$broadcast('myEvent');
   $scope.title = 'Yabadabadu';
 }
+
+var app = angular.module('testApp', [])
+  .controller('testCtrl', Controller);
