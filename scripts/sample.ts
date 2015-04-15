@@ -6,7 +6,7 @@ class Animal {
   }
 
   move(meters: number) {
-    alert(this.name + " moved " + meters + "m.");
+    console.log(this.name, " moved ", meters, "m.");
   }
 }
 

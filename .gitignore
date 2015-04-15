@@ -1,1 +1,5 @@
 node_modules
+dist
+dist/sample.js
+
+dist/sample.js.map
