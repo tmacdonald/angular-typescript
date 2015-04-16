@@ -1,4 +1,4 @@
-/// <reference path="../typings/tsd.d.ts" />
+/// <reference path="../typings/angularjs/angular.d.ts" />
 
 class Animal {
   constructor(public name: string) {
@@ -19,5 +19,5 @@ function Controller($scope: ICustomScope) {
   $scope.title = 'Yabadabadu';
 }
 
-var app = angular.module('testApp', [])
+var app: ng.IModule = angular.module('testApp', [])
   .controller('testCtrl', Controller);

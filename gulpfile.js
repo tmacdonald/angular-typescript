@@ -1,5 +1,10 @@
 var gulp = require('gulp');
+var nodemon = require('nodemon');
 var tsc = require('gulp-tsc');
+
+var paths = {
+  scripts: ['scripts/*.ts']
+};
 
 gulp.task('html', function() {
   return gulp
@@ -9,7 +14,7 @@ gulp.task('html', function() {
 
 gulp.task('scripts', function() {
   return gulp
-    .src(['scripts/*.ts'])
+    .src(paths.scripts)
     .pipe(tsc({
       module: "CommonJS",
       sourcemap: true,
@@ -17,6 +22,15 @@ gulp.task('scripts', function() {
       out: 'bundle.js'
     }))
     .pipe(gulp.dest('dist'));
+});
 
+gulp.task('start', function() {
+  nodemon({
+    script: 'server.js',
+    ext: 'js'
+  });
+});
 
+gulp.task('watch', function() {
+  return gulp.watch(paths.scripts, ['scripts']);
 });
