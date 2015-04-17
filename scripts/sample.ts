@@ -16,8 +16,8 @@ interface ICustomScope extends ng.IScope {
 
 function Controller($scope: ICustomScope) {
   $scope.$broadcast('myEvent');
-  $scope.title = 'Yabadabadu';
+  $scope.title = 'Here\'s a title!';
 }
 
 var app: ng.IModule = angular.module('testApp', [])
-  .controller('testCtrl', Controller);
+  .controller('testCtrl', ['$scope', Controller]);
