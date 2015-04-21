@@ -26,6 +26,7 @@
     "express": "^4.12.3",
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
+    "gulp-jasmine": "^2.0.1",
     "gulp-sourcemaps": "^1.5.1",
     "gulp-tsc": "^0.9.4",
     "gulp-typescript": "^2.6.0",
