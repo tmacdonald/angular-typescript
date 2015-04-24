@@ -6,4 +6,4 @@ var app = express();
 app.use(compress());
 app.use(express.static('dist'));
 
-app.listen(3000);
+module.exports = app.listen(3000);
